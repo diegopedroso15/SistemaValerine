@@ -1,0 +1,42 @@
+// Functions,Mixins,Variables
+@import "scss/abstracts/variables";
+@import "scss/abstracts/mixin";
+
+// Reset,Typography,Helper Class
+@import "scss/base/reset";
+@import "scss/base/typography";
+@import "scss/base/helper_class";
+
+// Components
+@import "scss/components/buttons";
+@import "scss/components/animations";
+@import "scss/components/form";
+@import "scss/components/pagination";
+@import "scss/components/preloader";
+
+// Layout
+@import "scss/layout/header";
+@import "scss/layout/hero";
+@import "scss/layout/about";
+@import "scss/layout/services";
+@import "scss/layout/counters";
+@import "scss/layout/menu";
+@import "scss/layout/promo_banner";
+@import "scss/layout/gallery";
+@import "scss/layout/team";
+@import "scss/layout/testimonial";
+@import "scss/layout/blog";
+@import "scss/layout/footer";
+@import "scss/layout/breadcrumb";
+@import "scss/layout/sidebar";
+
+// Pages
+@import "scss/pages/home_slider";
+@import "scss/pages/home_particles";
+@import "scss/pages/home_video";
+
+// Inner Pages
+@import "scss/pages/blog_single";
+@import "scss/pages/services_page";
+@import "scss/pages/contact_us";
+@import "scss/pages/intro";

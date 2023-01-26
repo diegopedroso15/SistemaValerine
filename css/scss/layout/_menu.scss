@@ -1,0 +1,113 @@
+/* ---------------------------------------------------------------- */
+/* 14.Menu                      
+/* ---------------------------------------------------------------- */
+.menu-gallery-filter {
+    text-align: center;
+    margin-bottom: 50px;
+    a {
+        color: $color_black;
+        padding: 11px 22px;
+        margin-right: 10px;
+        font-weight: 600;
+        border-radius: 100px;
+        display: inline-block;
+        background: transparent;
+        transition: all 0.25s ease;
+        box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover, &.current {
+            background: $color_primary;
+            color: $color_white;
+        }
+    }
+}
+.menu-gallery-item-inner {
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+    .item-price {
+        display: inline-block;
+        padding: 20px;
+        margin-right: 20px;
+        border:2px dashed $color_primary;
+        display: inline-block;
+        border-radius: 50%;
+        width: 114px;
+        height: 114px;
+        flex: 0 0 114px;
+        span {
+            font-size: 20px;
+            color: $color_white;
+            margin-left: 0;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            line-height: 70px;
+            background: $color_primary;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow:0 12px 25px -1px rgba($color_primary, 0.2);
+        }
+    }
+    .gallery-details {
+        h6 {
+            margin-bottom: 10px;
+            a {
+                color: $color_black;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 23px 49px -1px rgba($color_black, 0.1);
+        border-bottom: 4px solid $color_primary;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query less than 700px
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:1199.98px) {
+    .menu-gallery-filter {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        a {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+                margin-right: 0;
+            }
+            &:hover, &.current {
+                background: $color_primary;
+                color: $color_white;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query less than 576px
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:992.98px) {
+    .menu-gallery-item-inner {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .item-price {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

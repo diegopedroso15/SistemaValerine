@@ -1,0 +1,85 @@
+/* -------------------------------------------------------------------
+ * Template Name         : Pepechura - Restaurant Template
+ * Theme Author Name     : Yucel Yilmaz
+ * Created Date          : 29 October 2022
+ * Version               : 1.0
+ * File                  : style.css
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+   Base                               
+   ------------------------ /
+ * 01.Base
+ * 02.Typography
+ * 03.Helper Class
+   ------------------------ /
+   Components                               
+   ------------------------ /
+ * 04.Buttons  
+ * 05.Animations 
+ * 06.Form(Input, Comment)
+ * 07.Pagination 
+ * 08.Preloader
+   ------------------------ /
+   Layout                               
+   ------------------------ /
+ * 09.Header
+ * 10.Hero
+ * 11.About
+ * 12.Services
+ * 13.Counters
+ * 14.Menu
+ * 15.Promo Banner
+ * 16.Gallery
+ * 17.Team
+ * 18.Testimonial
+ * 20.Breadcrumb    
+ * 21.Sidebar
+   ------------------------ /
+   Home Pages                               
+   ------------------------ /
+ * 22.Home Slider
+ * 23.Home Particles 
+ * 24.Home Video
+  ------------------------ /
+  Inner Pages                               
+  ------------------------ /
+ * 25.Blog Single 
+ * 26.Services Page
+ * 27.Contact Us
+ * 28.Home Intro
+------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* 01.Base                               
+/* ---------------------------------------------------------------- */
+body, html {
+    font : {
+        size: 16px;
+        family: $font_text; 
+        weight: 400;
+    }
+    color: $body_text;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: $color_black;
+    color: $color_white;
+}
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+textarea, textarea:focus, input, input:focus, button, button:focus {
+    outline: none;
+    resize: inherit;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}

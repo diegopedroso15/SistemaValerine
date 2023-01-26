@@ -1,0 +1,30 @@
+/* ---------------------------------------------------------------- */
+/* 24.Home Video                
+/* ---------------------------------------------------------------- */
+#hero_video {
+    object-fit: cover;
+    object-position: center;
+    z-index: 35;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    .hero-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background: $color_black;
+    }
+    .video-content {
+        z-index: 27;
+        position: relative;
+    }
+}

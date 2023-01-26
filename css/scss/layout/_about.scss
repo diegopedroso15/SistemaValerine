@@ -1,0 +1,78 @@
+/* ---------------------------------------------------------------- */
+/* 11.About                            
+/* ---------------------------------------------------------------- */
+.about-img-wrap {
+    position: relative;
+    display: inline-block;
+    img {
+        border-radius: 20px;
+    }
+    .about-video-btn {
+        left: 50%;
+        top:50%;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+        background: $color_white;
+        padding: 20px;
+        box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+        > i{
+            width: 56px;
+            height: 56px;
+            display: flex;
+            transition: all 0.5s ease;
+            border-radius: 50%;
+            background: $color_primary;
+            color: $color_white;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                color: $color_white !important;
+                background: $color_dark;
+                animation: pulsePrimary 1s 1 ease-in-out;
+            }
+        }
+    }
+}
+.about-inner {
+    span {
+        color: $color_white;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-weight: 600;
+        border-radius: 100px;
+        padding: 8px 18px;
+        font-size: 14px;
+        background: $color_primary;
+    }   
+    h4 {
+        margin-bottom: 15px;
+    }   
+    p {
+        margin-bottom: 30px;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+    .about-img-wrap {
+        margin-bottom: 30px;
+        img {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .about-img-resp {
+        text-align: center;
+    }
+    .about-inner {
+        text-align: center;
+        h4 {
+            margin-bottom: 15px;
+        }   
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}

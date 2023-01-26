@@ -1,0 +1,105 @@
+/* ---------------------------------------------------------------- */
+/* 03.Helper Class                              
+/* ---------------------------------------------------------------- */
+.page-wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+.section {
+    padding: 100px 0;
+    overflow: hidden;
+    .section-heading {
+        text-align: center;
+        margin-bottom: 60px;
+        span {
+            color: $color_white;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-weight: 600;
+            border-radius: 100px;
+            padding: 8px 18px;
+            font-size: 14px;
+            background: $color_primary;
+        }
+        h4 {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            display: block;
+            position: relative;
+            &:after {
+                content: "";
+                width: 50px;
+                height: 4px;
+                bottom: 0;
+                left: 50%;
+                position: absolute;
+                background: $color_primary;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+.shadow-in {
+    box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+}
+.bg-grey {
+    background: $color_like_grey;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.pb-minus-70 {
+    padding-bottom: 70px;
+}
+.bg-dark {
+    background: $color_black;
+}
+.bg-primary-light {
+    background: rgba($color_primary, 0.1);
+}
+.team-carousel, .blog-carousel, .testimonial-carousel {
+    .owl-dots {
+        line-height: 0 !important;
+        margin-top: 30px !important;
+        .owl-dot {
+            margin-right: 8px;
+            vertical-align: middle;
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                margin: 0;
+                width: 30px;
+                height: 6px;
+                display: block;
+                border-radius: 4px;
+                background: rgba($color_black, 0.1);
+                transition: background-color 400ms cubic-bezier(0.65, 0, 0.35, 1);
+            }
+            &.active {
+                span {
+                    background: $color_primary;
+                }
+            }
+        }
+    }
+    .item {
+        &:hover {
+            cursor: w-resize;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .section {
+        .section-heading {
+            .section-title {
+                font-size: 2.7rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                     
+/* ---------------------------------------------------------------- */
+.primary-btn {
+    padding:22px 46px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 100px;
+    color: $color_white !important;
+    transition: all 0.25s ease;
+    background: $color_primary;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    &:hover {
+        color: $color_white !important;
+        &:after {
+            transform: scale(1);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -4;
+        height: 100%;
+        transform-origin: 0 100%;
+        transform: scaleY(0);
+        transition: all 0.25s ease;
+        background: $color_dark;
+    }
+}
+.primary-outline-btn {
+    padding: 22px 46px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    color: $color_white !important;
+    transition: all 0.25s ease;
+    background: $color_primary;
+    overflow: hidden;
+    z-index: 1;
+    &:hover {
+        color: $color_primary !important;
+        &:after {
+            transform: scale(1);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -4;
+        height: 100%;
+        transform-origin: 0 100%;
+        transform: scaleY(0);
+        transition: all 0.25s ease;
+        background: $color_white;
+    }
+}
+.scroll-top-btn {
+	bottom: 0;
+	opacity: 0;
+	right: 10px;
+	width: 60px;
+    height: 60px;
+    z-index: 1444;
+	line-height: 60px;
+	font-size: 16px;
+	border-radius: 50%;
+	text-align: center;
+	position: fixed;
+	visibility: hidden;
+	color: $color_white !important;
+	background: $color_primary;
+	transition: all 0.25s ease;
+	&:hover {
+        color: $color_white !important;
+        animation: pulsePrimary 1s 1 ease-in-out;
+    }
+	&.active {
+		opacity: 1;
+		bottom: 10px;
+		visibility: visible;
+	}
+}

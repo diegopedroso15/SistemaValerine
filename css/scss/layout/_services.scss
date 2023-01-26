@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------- */
+/* 12.Services                           
+/* ---------------------------------------------------------------- */
+.services-item {
+    padding: 40px 30px 36px 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background: $color_white;
+    transition: all 0.5s ease;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+    .icon {
+        padding: 20px;
+        margin-bottom: 30px;
+        border:2px dashed $color_primary;
+        display: inline-block;
+        border-radius: 50%;
+        span {
+            &:before {
+                font-size: 50px;
+                color: $color_white;
+                margin-left: 0;
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                background: $color_primary;
+                display: inline-block;
+                border-radius: 50%;
+                box-shadow:0 12px 25px -1px rgba($color_primary, 0.2);
+            }
+        }
+    }
+    .body {
+        h6 {
+            margin-bottom: 15px;
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 23px 49px -1px rgba($color_black, 0.1);
+        border-bottom: 4px solid $color_primary;
+    }
+}

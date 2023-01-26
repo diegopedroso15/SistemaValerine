@@ -1,0 +1,99 @@
+/* ---------------------------------------------------------------- */
+/* 19.Blog                      
+/* ---------------------------------------------------------------- */
+.blog-item {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background: $color_white;
+    transition: all 0.5s ease;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 12px 25px -1px rgba($color_black, 0.1);
+    .blog-img {
+        overflow: hidden;
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.15);
+            }
+        }
+    }
+    .blog-body {
+        padding: 30px 30px 19px 30px;
+        .blog-meta {
+            margin-bottom: 15px;
+            color: $color_black;
+            font-weight: 500;
+            font-size: 14px;
+            span {
+                i {
+                    margin-right: 10px;
+                    color: $color_primary;
+                }
+                &:first-child {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .blog-text {
+            h6 {
+                margin-bottom: 10px;
+                a {
+                    color: $color_black;
+                    &:hover {
+                        color: $color_primary;
+                        transition: all 0.25s ease;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            .blog-more-btn {
+                border: none;
+                outline: none;
+                color: $color_white;
+                font-size: 14px;
+                padding: 12px 28px;
+                text-align: center;
+                position: relative;
+                border-radius: 100px;
+                background: $color_primary;
+                display: inline-block;
+                text-transform: capitalize;
+                transition: all 0.25s ease;
+                overflow: hidden;
+                position: relative;
+                z-index: 5;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: -5;
+                    height: 100%;
+                    border-radius: 100px;
+                    transform-origin: 0 100%;
+                    transform: scaleY(0);
+                    transition: all 0.25s ease;
+                    background: $color_dark;
+                }
+                &:hover {
+                    color: $color_white !important;
+                    &:after {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 23px 49px -1px rgba($color_black, 0.1);
+        border-bottom: 4px solid $color_primary;
+    }
+}

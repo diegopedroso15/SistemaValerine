@@ -1,0 +1,102 @@
+/* ---------------------------------------------------------------- */
+/* 27.Contact Us        
+/* ---------------------------------------------------------------- */
+.contact-info-wrap {
+    .contact-info-text {
+        margin-bottom: 30px;
+    }
+    .contact-info-box  {
+        display: flex;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .icon {
+            margin-right: 20px;
+            display: inline-block;
+            padding: 20px;
+            margin-right: 20px;
+            border:2px dashed $color_primary;
+            display: inline-block;
+            border-radius: 50%;
+            flex: 0 0 94px;
+            height: 94px;
+            width: 94px;
+            span {
+                font-size: 16px;
+                color: $color_white;
+                margin-left: 0;
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                line-height: 50px;
+                background: $color_primary;
+                display: inline-block;
+                border-radius: 50%;
+                box-shadow:0 12px 25px -1px rgba($color_primary, 0.2);
+            }
+        }
+        .body {
+            h6 {
+                margin-bottom: 7px;
+            }
+            p {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.contact-form-wrap .empty-form span, .contact-form-wrap .email-invalid span, 
+.contact-form-wrap .phone-invalid span {
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background: rgb(242, 116, 116);
+}
+
+#error_message {
+    margin-top: 30px;
+    display: block;
+    padding: 20px;
+    border-radius: 5px;
+    word-break: break-word;
+    background: rgba(242, 116, 116, 0.2);
+    color: #721c24;
+  }
+  
+  
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .contact-info-wrap {
+        margin-bottom: 30px;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query less than 576px
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .contact-info-wrap {
+        .contact-info-box  {
+            display: block;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .icon {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
